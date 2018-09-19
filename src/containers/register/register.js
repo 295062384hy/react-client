@@ -18,7 +18,7 @@ const ListItem=List.Item
       [name]:value
     })
   }
-  register=()=>{
+  registera=()=>{
     this.props.register(this.state)
   }
   goLogin=()=>{
@@ -48,7 +48,7 @@ const ListItem=List.Item
              <Radio  checked={type==='laoban'} onChange={()=>this.handleChange('type','lanban')}>老板</Radio>&nbsp;&nbsp;&nbsp;
               <Radio checked={type==='dashen'} onChange={()=>this.handleChange('type','lanban')}>大神</Radio>&nbsp;&nbsp;&nbsp;
             </ListItem>
-            <Button type='primary' onClick={this.register}>注&nbsp;&nbsp;册</Button>
+            <Button type='primary' onClick={this.registera}>注&nbsp;&nbsp;册</Button>
             <Button  onClick={this.goLogin}>已有账户</Button>
           </List>
         </WingBlank>
