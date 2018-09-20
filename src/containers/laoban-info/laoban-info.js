@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {NavBar,InputItem,TextareaItem,Button,List,WingBlank} from 'antd-mobile'
 import {Redirect} from 'react-router-dom'
 import {updateUser} from '../../redux/actions'
-import {HeaderSelector} from '../../components/header-selector/header-selsctor'
+import HeaderSelector from '../../components/header-selector/header-selsctor'
 
 class LanbanInfo extends Component{
   state={

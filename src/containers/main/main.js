@@ -44,11 +44,10 @@ import NavFooter from '../../components/nav-footer/nav-footer'
   ]
 
   render(){
-   const userid=Cookies.get('userid')
-    if(!userid){
-     // this.props.history.replace('/login')
-     //  return null
-     return <Redirect to='/login'/>
+
+      const userid = Cookies.get('userid')
+      if(!userid) {
+        return <Redirect to='/login'/>
     }
 
     const navList=this.navList
